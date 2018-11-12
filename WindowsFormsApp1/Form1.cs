@@ -19,22 +19,39 @@ namespace WindowsFormsApp1
             
         }
 
+        private Button btn;
+
         private void Form1_Load(object sender, EventArgs e) //매서드
         {
-            Button btn = new Button();
+            for(int i =0; i < 3; i++)
+            {
+                btn = new Button();
 
-            btn.DialogResult = DialogResult.OK;
-            btn.Text = "확인";
-            btn.Size = new Size(100, 50);     // 버튼 사이즈 
-            btn.Location = new Point(350, 30);// 버튼 위치점
+                btn.DialogResult = DialogResult.OK;
+                btn.Text = string.Format("확인 : {0}", (i + 1));
+                btn.Size = new Size(100, 50);     // 버튼 사이즈 
+                btn.Location = new Point((100*i) + 30, 30);// 버튼 위치점
+                btn.Cursor = Cursors.Hand; //마우스 손모양으로 바꾸기
 
-            Controls.Add(btn);
-            btn.Click += btn_click;
+                Controls.Add(btn);
+                btn.Click += btn_click;
+            }
+            
         }
 
         private void btn_click(object o , EventArgs a)
         {
-            MessageBox.Show("확인하기");
+            btn = (Button) o; //명시적 형변환 오브젝트를 버튼 으로 형변환 시킨것
+                              
+
+            //if(btn.BackColor == Color.Green)
+            //{
+            //    btn.BackColor = Color.Silver;ㅛ
+            //}
+            //else btn.BackColor = Color.Green; //버튼 누를시 그린으로 색 변환
+            btn.BackColor = (btn.BackColor == Color.Green) ? btn.BackColor = Color.Silver : btn.BackColor = Color.Green; //삼합 연산자로 코드 줄인것
+
+            //MessageBox.Show(btn.Text);
         }
 
 
