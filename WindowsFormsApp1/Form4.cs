@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private void Form4_Load(object sender, EventArgs e)
         {
             Class1 c1 = new Class1();
-            c1.btn(this);
+            c1.btn(this);//this 는 Form4 자기 자신을 나타낸다.
 
         }
     }
