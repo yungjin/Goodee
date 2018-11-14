@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
             btn.Size = new Size(c2.Sx, c2.Sy);
             btn.Location = new Point(c2.Px, c2.Py);
             btn.Cursor = Cursors.Hand;
-
+            btn.Click += c2.eh;
             c2.Form.Controls.Add(btn);
         }
         public void lb(Class3 c3)
@@ -36,5 +36,7 @@ namespace WindowsFormsApp1
 
             c3.Form.Controls.Add(label);
         }
+
+
     }
 }

@@ -16,16 +16,14 @@ namespace WindowsFormsApp1
         public Form4()
         {
             InitializeComponent();
-
             Load += Form4_Load;
         }
-
         private void Form4_Load(object sender, EventArgs e)
         {
             Class1 c1 = new Class1();
             ArrayList arr = new ArrayList();
-            arr.Add(new Class2(this, "btn_1", " 버튼 1", 100, 50, 30, 30));
-            arr.Add(new Class2(this,"btn_2", " 버튼 2", 100, 50, 30, 90));
+            arr.Add(new Class2(this, "btn_1", " 버튼 1", 100, 50, 30, 30, btn1_Click));
+            arr.Add(new Class2(this,"btn_2", " 버튼 2", 100, 50, 30, 90, btn2_Click));
             arr.Add(new Class3(this,"lb_1", " 라벨 1", 100, 50, 160, 30));
 
             for (int i = 0; i < arr.Count; i++)
@@ -39,9 +37,16 @@ namespace WindowsFormsApp1
                 {
                     c1.lb((Class3)arr[i]);
                 }
-                
             }
-            
+        }
+
+        private void btn1_Click(Object o , EventArgs e)
+        {
+            MessageBox.Show("버튼1 오픈");
+        }
+        private void btn2_Click(Object o, EventArgs e)
+        {
+            MessageBox.Show("버튼2 오픈");
         }
     }
 }

@@ -17,8 +17,9 @@ namespace WindowsFormsApp1
         int sy;
         int px;
         int py;
+        public EventHandler eh;
 
-        public Class2(Form form, string name, string text, int sx, int sy, int px, int py)
+        public Class2(Form form, string name, string text, int sx, int sy, int px, int py, EventHandler eh)
         {
             this.form = form;
             this.name = name;
@@ -27,6 +28,7 @@ namespace WindowsFormsApp1
             this.sy = sy;
             this.px = px;
             this.py = py;
+            this.eh = eh;
         }
 
         public Form Form
@@ -45,7 +47,6 @@ namespace WindowsFormsApp1
             }
 
         }
-
         public string Text
         {
             get
