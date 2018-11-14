@@ -24,6 +24,17 @@ namespace WindowsFormsApp1
 
             c2.Form.Controls.Add(btn);
         }
+        public void lb(Class3 c3)
+        {
+            Label label = new Label();
 
+            label.Name = c3.Name;
+            label.Text = c3.Text;
+            label.Size = new Size(c3.Sx, c3.Sy);
+            label.Location = new Point(c3.Px, c3.Py);
+            label.Cursor = Cursors.Hand;
+
+            c3.Form.Controls.Add(label);
+        }
     }
 }
