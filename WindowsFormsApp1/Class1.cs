@@ -10,15 +10,9 @@ namespace WindowsFormsApp1
 {
     class Class1
     {
-        Form form;
-        public Class1(Form form)
-        {
-            this.form = form;
+        
 
-
-        }
-
-        public void btn()
+        public void btn(Form form)
         {
             Button btn = new Button();
 
@@ -30,7 +24,6 @@ namespace WindowsFormsApp1
             btn.Cursor = Cursors.Hand; //마우스 손모양으로 바꾸기
 
             form.Controls.Add(btn);
-            
         }
 
     }

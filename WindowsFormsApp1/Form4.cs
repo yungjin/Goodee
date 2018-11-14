@@ -21,8 +21,8 @@ namespace WindowsFormsApp1
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            Class1 c1 = new Class1(this);
-            c1.btn();
+            Class1 c1 = new Class1();
+            c1.btn(this);
 
         }
     }
