@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
 
         }
 
-        public void btn(Form form)
+        public void btn()
         {
             Button btn = new Button();
 
