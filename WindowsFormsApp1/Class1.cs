@@ -11,7 +11,6 @@ namespace WindowsFormsApp1
     class Class1
     {
         
-
         public void btn(Class2 c2)
         {
             Button btn = new Button();

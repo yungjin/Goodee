@@ -8,7 +8,6 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
 
-    
     class Class2
     {
         Form form;
@@ -34,7 +33,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Form;
+                return form;
             }
 
         }
@@ -42,7 +41,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Name;
+                return name;
             }
 
         }
@@ -51,7 +50,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Text;
+                return text;
             }
 
         }
@@ -59,7 +58,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Sx;
+                return sx;
             }
 
         }
@@ -67,7 +66,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Sy;
+                return sy;
             }
 
         }
@@ -75,7 +74,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Px;
+                return px;
             }
 
         }
@@ -83,7 +82,7 @@ namespace WindowsFormsApp1
         {
             get
             {
-                return Py;
+                return py;
             }
 
         }

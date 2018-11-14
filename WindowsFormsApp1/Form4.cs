@@ -26,10 +26,11 @@ namespace WindowsFormsApp1
             ArrayList arr = new ArrayList();
             arr.Add(new Class2(this, "btn 1", " 버튼 1", 100, 50, 30, 30));
             arr.Add(new Class2(this, "btn 2", " 버튼 2", 100, 50, 30, 90));
-
+            
             for(int i = 0; i < arr.Count; i++)
             {
-                c1.btn((Class2)arr[i]);
+                //MessageBox.Show("1111");
+                c1.btn((Class2) arr[i]);
             }
             
         }
