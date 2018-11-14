@@ -12,18 +12,18 @@ namespace WindowsFormsApp1
     {
         
 
-        public void btn(Form form, string name , string text , int sx ,int sy ,int px,int py)
+        public void btn(Class2 c2)
         {
             Button btn = new Button();
 
             btn.DialogResult = DialogResult.OK;
-            btn.Name = name;
-            btn.Text = text;
-            btn.Size = new Size(sx, sy);
-            btn.Location = new Point(px, py);
-            btn.Cursor = Cursors.Hand; 
+            btn.Name = c2.Name;
+            btn.Text = c2.Text;
+            btn.Size = new Size(c2.Sx, c2.Sy);
+            btn.Location = new Point(c2.Px, c2.Py);
+            btn.Cursor = Cursors.Hand;
 
-            form.Controls.Add(btn);
+            c2.Form.Controls.Add(btn);
         }
 
     }

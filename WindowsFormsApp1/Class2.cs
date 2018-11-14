@@ -23,13 +23,14 @@ namespace WindowsFormsApp1
         {
             this.form = form;
             this.name = name;
+            this.text = text;
             this.sx = sx;
             this.sy = sy;
             this.px = px;
             this.py = py;
         }
 
-        Form Form
+        public Form Form
         {
             get
             {
@@ -37,7 +38,7 @@ namespace WindowsFormsApp1
             }
 
         }
-        string Name
+        public string Name
         {
             get
             {
@@ -46,7 +47,7 @@ namespace WindowsFormsApp1
 
         }
 
-        string Text
+        public string Text
         {
             get
             {
@@ -54,7 +55,7 @@ namespace WindowsFormsApp1
             }
 
         }
-        int Sx
+        public int Sx
         {
             get
             {
@@ -62,7 +63,7 @@ namespace WindowsFormsApp1
             }
 
         }
-        int Sy
+        public int Sy
         {
             get
             {
@@ -70,7 +71,7 @@ namespace WindowsFormsApp1
             }
 
         }
-        int Px
+        public int Px
         {
             get
             {
@@ -78,7 +79,7 @@ namespace WindowsFormsApp1
             }
 
         }
-        int Py
+        public int Py
         {
             get
             {
