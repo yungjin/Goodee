@@ -12,16 +12,16 @@ namespace WindowsFormsApp1
     {
         
 
-        public void btn(Form form)
+        public void btn(Form form, string name , string text , int sx ,int sy ,int px,int py)
         {
             Button btn = new Button();
 
             btn.DialogResult = DialogResult.OK;
-            btn.Name = string.Format("btn_{0}", (1));
-            btn.Text = string.Format("확인 : {0}", (1));
-            btn.Size = new Size(100, 50);     // 버튼 사이즈 
-            btn.Location = new Point(30, 30);// 버튼 위치점
-            btn.Cursor = Cursors.Hand; //마우스 손모양으로 바꾸기
+            btn.Name = name;
+            btn.Text = text;
+            btn.Size = new Size(sx, sy);
+            btn.Location = new Point(px, py);
+            btn.Cursor = Cursors.Hand; 
 
             form.Controls.Add(btn);
         }
